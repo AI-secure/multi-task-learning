@@ -1,5 +1,5 @@
 # Bridging Multi-Task Learning and Meta-Learning
-Code for the ICML 2021 paper "**Bridging Multi-Task Learning and Meta-Learning: Towards Efficient Training and Effective Adaptation**" by Haoxiang Wang, Han Zhao, and Bo Li from UIUC.
+Code for the ICML 2021 paper "**Bridging Multi-Task Learning and Meta-Learning: Towards Efficient Training and Effective Adaptation**" by Haoxiang Wang, Han Zhao, and Bo Li from UIUC. [[arXiv:2016.09017](https://arxiv.org/abs/2106.09017)]
 
 This repo contains our implementation of multi-task learning (MTL) for few-shot learning benchmarks. Our empirical studies show that MTL matches the state-of-the-art gradient-based meta-learning algorithms, while being an order of magnitude faster. 
 
