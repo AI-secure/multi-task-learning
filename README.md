@@ -91,7 +91,7 @@ Notice that the argparser does not only parse the arguments in `train.py`. In ad
 
 ## Running
 
-To replicate empirical results of multi-task learning shown in the paper, please run the following commands with your preferred root directory to save datasets and the GPU to use. The code can automatically download datasets to the root directory you specify.
+To replicate empirical results of multi-task learning shown in the paper, please run the following commands with your preferred root directory to save datasets and the GPU to use. The code can automatically download datasets to the root directory you specified.
 
 In the following demo, we consider the root directory as `/data` and the GPU index as `0`.
 
