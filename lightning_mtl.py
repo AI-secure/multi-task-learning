@@ -184,9 +184,10 @@ class LightningMTL(LightningEpisodicModule):
         assert weight.shape == self.classifier.weight.shape
         def learner(x):
             return F.linear(x, weight)
-        for i, class_idx in enumerate(class_idxes):
-            labels[labels == class_idx] = i
+        labels_new = torch.zeros_like(labels).long()
+        for i, class_idx in enumerate(class_idxes):            
+            labels_new[labels == class_idx] = i        
         preds = learner(self.features(data))
-        error = self.loss(preds, labels)
-        acc = accuracy(preds, labels)
+        error = self.loss(preds, labels_new)
+        acc = accuracy(preds, labels_new)
         return error,acc
